@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Scanner App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Food Scanner</h1>
+        <p>Scan food items using your camera and get health information.</p>
+        
+        <!-- Camera view -->
+        <div class="camera-section">
+            <video id="video" width="100%" height="auto" autoplay></video>
+            <button id="capture-btn">Capture Image</button>
+        </div>
+        
+        <!-- Image preview and health analysis -->
+        <div id="preview-section" class="hidden">
+            <img id="captured-image" src="" alt="Captured food">
+            <button id="analyze-btn">Analyze Healthiness</button>
+            <div id="health-info">
+                <p id="result-text"></p>
+                <p id="result-score"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
